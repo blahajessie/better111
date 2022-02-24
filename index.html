@@ -1,0 +1,14 @@
+<head>
+</head>
+<body>
+  <iframe id="iframe" src="https://www2.ucsc.edu/courses/cse111-wm/:/"></iframe>
+  <script>
+    var doc = document.getElementById('iframe').contentWindow.document;
+    doc.open(); 
+    var ss = doc.createElement("style");
+    ss.innerHTML = "*{color:white !important;}";
+    doc.head.append(ss);
+    
+    doc.close();
+  </script>
+</body>
